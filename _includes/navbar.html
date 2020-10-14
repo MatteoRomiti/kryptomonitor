@@ -1,0 +1,26 @@
+<nav>
+  <ul id="slide-out" class="side-nav">
+    <li><a class="page-link" href="/">Home</a></li>
+      {% assign navigation_pages = site.html_pages | sort: 'navigation_weight' %}
+      {% for p in navigation_pages %}
+        {% if p.navigation_weight %}
+          <li><a class="page-link" href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+  </ul>
+
+  <ul class="brand-logo center unstyled hide-on-med-and-down">
+    <span class="left">
+      <a class = "site-title" href = "/">Home</a>
+    </span>
+    {% assign navigation_pages = site.html_pages | sort: 'navigation_weight' %}
+    {% for p in navigation_pages %}
+      {% if p.navigation_weight %}
+    <li><a href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+
+  <a href="#" data-activates="slide-out" class="button-collapse brand-logo"><i class="mdi-navigation-menu"></i></a>
+</nav>

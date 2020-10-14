@@ -1,0 +1,44 @@
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54e628a0244b5bf5" async="async"></script>
+
+<script> 
+  // footer
+  particlesJS.load('particles-js-footer', '/js/particles-footer.json', function() {
+    console.log('callback - particles.js config loaded');
+  });
+</script>
+
+<!-- Google analytics -->
+<!-- <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('require', 'displayfeatures');
+  ga('create', 'UA-57879066-1', 'auto');
+  ga('send', 'pageview');
+</script>
+ -->
+<footer class="site-footer">
+  <div style="overflow:hidden;position:relative">
+    <div class="wrapper">
+
+      <div id="footer_wrap" class="outer">
+        <footer class="inner">
+          {% if site.github.is_project_page %}
+            <p class="copyright">{{ site.title | default: site.github.repository_name }} maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+          {% endif %}
+          <p>Last update: {{ site.time | date_to_long_string}}</p>
+          <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+        </footer>
+      </div>
+
+    </div>
+
+    <!-- Particlesjs banner -->
+    <div class="parallax">
+      <div id="particles-js-footer"></div>
+    </div>
+  </div>
+
+</footer>

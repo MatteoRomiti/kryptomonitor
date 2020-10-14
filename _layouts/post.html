@@ -1,0 +1,44 @@
+---
+layout: default
+---
+<article id = "section-to-print" class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+    <p class="post-meta">
+    	<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
+    	{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %} •
+      {% for cat in page.categories %}
+        <a href="/tags/#{{ cat }}"><span class = "chip-cat">{{ cat }}</span></a>
+      {% endfor %}
+    	{% for tag in page.tags %}
+    		<a href="/tags/#{{ tag }}"><span class = "chip">#{{ tag }}</span></a>
+    	{% endfor %}
+    </p>
+
+
+    <p class = "post-meta">
+      <span class = "valign">
+      Save as <a href="javascript:void(0)" onClick="window.print()"> PDF</a>
+      {% if page.ipynb %}
+       • <a href="{{ page.ipynb }}"> IPythonNotebook</a> 
+       {% endif %}
+       {% if page.rmd %}
+       • <a href="{{ page.rmd }}"> Rmarkdown</a> 
+       {% endif %}
+       {% if page.rpubs %}
+       • <a href="{{ page.rpubs }}" target="_blank"> RPubs</a> 
+       {% endif %}
+       </span>
+    </p>
+    <!-- Share buttons. Go to www.addthis.com/dashboard to customize your tools -->
+    <div class="addthis_sharing_toolbox"></div>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  <hr>
+  
+</article>

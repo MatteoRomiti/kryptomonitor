@@ -1,0 +1,59 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="user-scalable=yes">
+
+  <title>{% if page.og-title %}{{ page.og-title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+
+  <meta property="og:title" content="{% if page.og-title %}{{ page.og-title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
+  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:url" content="{{%page.url | prepend: site.url %}}">
+  <meta property="og:image" content="{% if page.img %}{{ page.img | prepend: site.url }}{% endif %}" />
+
+
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+ 
+  <link rel="stylesheet" href="{{ "/css/materialize.css" | prepend: site.baseurl }}">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{{ "/css/fa-brand-colors.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+
+  <!-- Jquery -->
+  <script src="{{ site.baseurl}}/js/utils/jquery.js"></script>
+
+  <!-- Materialize js -->
+  <script src="{{ site.baseurl}}/js/utils/materialize-js/bin/materialize.min.js"></script>
+
+  <!-- particles js -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+  <!-- Typed.js -->
+  <script src="{{ site.baseurl}}/js/utils/typed.js"></script>
+
+  <!-- User js -->
+  <script src="{{ site.baseurl}}/js/main.js"></script>
+
+  <!-- Mathjax for latex support -->
+  <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+       CommonHTML: { linebreaks: { automatic: true } },
+      "HTML-CSS": { linebreaks: { automatic: true } },
+      SVG: { linebreaks: { automatic: true } },
+      TeX: { equationNumbers: { autoNumber: "AMS" },
+             extensions: ["AMSmath.js", "AMSsymbols.js"] },
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true,
+        processEnvironments: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    });
+  </script>
+
+</head>

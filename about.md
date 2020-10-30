@@ -27,7 +27,7 @@ navigation_weight: 2
               eine rechtliche Bewertung der entwickelten Methoden und Regulierungsempfehlungen hinsichtlich Tokens und Zahlungskanälen
             </li>
             <li>
-              neue forensische Methoden zur Analyse generischer Kryptoassets die als Programmbibliotheken ungesetzt und in existierende Werkzeuge (z.B.: BlockSci, GraphSense) integriert wurden
+              neue forensische Methoden zur Analyse generischer Kryptoassets die als Programmbibliotheken umgesetzt und in existierende Werkzeuge (z.B.: BlockSci, GraphSense) integriert wurden
             </li>
             <li>
               eine systematische Analyse und Risikobewertung von Kryptoassets

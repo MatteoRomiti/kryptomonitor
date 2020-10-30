@@ -4,6 +4,8 @@ navigation_weight: 1
 ---
 
 <div class="home">
+  <br>
+  <br>
   <div class = "row">
     <div class = "col s12 m12 l12">
       <div class = "card-panel">
@@ -11,7 +13,7 @@ navigation_weight: 1
           <div class = "col s12 m3 l3 center">
             <div>
               <a href='/about'>
-                <img src="/img/stella_logo_black_yellow_net.png" alt="" class="circle responsive-img hoverable">
+                <img src="/img/KRYPTOMONITOR_LOGO_RGB.svg" alt="" class="circle responsive-img hoverable">
               </a>
             </div>
             <div style = 'padding: 5px 0px'></div>
@@ -35,7 +37,7 @@ navigation_weight: 1
     <div class = "col s12 m12 l12">
       <div class = "card-panel">
         <h2>Beschreibung</h2>
-        Das Ziel des KRYPTOMONITOR Projekts liegt deshalb in der Entwicklung generischer <b>Kryptoasset-Analysemethoden</b>, die neben nativen Kryptowährungs-Transaktionen auch die Analyse von <b>Smart Contracts</b> und <b>Off-Chain</b> Transaktionen unterstützen. 
+        Das Ziel des KRYPTOMONITOR Projekts liegt in der Entwicklung generischer <b>Kryptoasset-Analysemethoden</b>, die neben nativen Kryptowährungs-Transaktionen auch die Analyse von <b>Smart Contracts</b> und <b>Off-Chain</b> Transaktionen unterstützen. 
         <br>
         <br>
         Die resultierenden Werkzeuge sollen eine effektivere Strafverfolgung durch neue forensische Analyseverfahren ermöglichen und eine faktenbasierte Entscheidungsgrundlage zur Bewertung möglicher <b>Risiken</b> und zur Durchsetzung regulatorischer Maßnahmen bieten. 

@@ -2,7 +2,7 @@
   {% for post in site.posts %}
     <li>
       <h2 style = "padding-bottom: 0px;padding-top: 0px;margin-bottom:0px">
-        <a class="post-link" style = "padding-bottom: 0px;" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a>
+        <a class="post-link" style = "padding-bottom: 0px;" href="{{ post.url | prepend: site.url }}">{{ post.title }}</a>
       </h2>
       <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span><span class = "post-meta"> by {{ post.author }}</span> 
 

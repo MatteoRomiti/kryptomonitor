@@ -5,7 +5,7 @@
       <div class="post-meta">{{ post.date | date: "%b %-d, %Y" }} •
         {{ post.author }}
       </div>
-      <a class="post-link" style = "display: inline-block;" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a>
+      <a class="post-link" style = "display: inline-block;" href="{{ post.url | prepend: site.url }}">{{ post.title }}</a>
       <br>
       {% include tag-list.html %}
     </div>

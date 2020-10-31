@@ -4,7 +4,7 @@
       {% assign navigation_pages = site.html_pages | sort: 'navigation_weight' %}
       {% for p in navigation_pages %}
         {% if p.navigation_weight %}
-          <li><a class="page-link" href="{{ p.url | prepend: site.baseurl | prepend: site.url }}">{{ p.title }}</a></li>
+          <li><a class="page-link" href="{{ p.url | prepend: site.url }}">{{ p.title }}</a></li>
         {% endif %}
       {% endfor %}
       <li><a class="page-link" href="https://matteoromiti.github.io/cryptomonitor">English</a></li>
@@ -17,7 +17,7 @@
     {% assign navigation_pages = site.html_pages | sort: 'navigation_weight' %}
     {% for p in navigation_pages %}
       {% if p.navigation_weight %}
-        <li><a href="{{ p.url | prepend: site.baseurl | prepend: site.url }}">{{ p.title }}</a></li>
+        <li><a href="{{ p.url | prepend: site.url }}">{{ p.title }}</a></li>
       {% endif %}
     {% endfor %}
     <span class="right">

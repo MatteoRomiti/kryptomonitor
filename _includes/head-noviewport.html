@@ -14,28 +14,28 @@
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
  
-  <link rel="stylesheet" href="{{ "/css/materialize.css" | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="stylesheet" href="{{ "/css/materialize.css" | prepend: site.url }}">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="{{ "/css/fa-brand-colors.css" | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="stylesheet" href="{{ "/css/fa-brand-colors.css" | prepend: site.url }}">
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.url }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.url }}">
 
   <!-- Jquery -->
-  <script src="{{ site.baseurl | prepend: site.url }}/js/utils/jquery.js"></script>
+  <script src="{{ site.url }}/js/utils/jquery.js"></script>
 
   <!-- Materialize js -->
-  <script src="{{ site.baseurl | prepend: site.url }}/js/utils/materialize-js/bin/materialize.min.js"></script>
+  <script src="{{ site.url }}/js/utils/materialize-js/bin/materialize.min.js"></script>
 
   <!-- particles js -->
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
   <!-- Typed.js -->
-  <script src="{{ site.baseurl | prepend: site.url }}/js/utils/typed.js"></script>
+  <script src="{{ site.url }}/js/utils/typed.js"></script>
 
   <!-- User js -->
-  <script src="{{ site.baseurl | prepend: site.url }}/js/main.js"></script>
+  <script src="{{ site.url }}/js/main.js"></script>
 
   <!-- Mathjax for latex support -->
   <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>

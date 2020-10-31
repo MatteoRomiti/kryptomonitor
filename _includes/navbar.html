@@ -1,6 +1,6 @@
 <nav>
   <ul id="slide-out" class="side-nav">
-    <li><a class="page-link" href="./">Home</a></li>
+    <li><a class="page-link" href="/">Home</a></li>
       {% assign navigation_pages = site.html_pages | sort: 'navigation_weight' %}
       {% for p in navigation_pages %}
         {% if p.navigation_weight %}
@@ -12,7 +12,7 @@
 
   <ul class="brand-logo center unstyled hide-on-med-and-down">
     <span class="left">
-      <a class="site-title" href="./">Home</a>
+      <a class="site-title" href="/">Home</a>
     </span>
     {% assign navigation_pages = site.html_pages | sort: 'navigation_weight' %}
     {% for p in navigation_pages %}

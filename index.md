@@ -12,9 +12,7 @@ navigation_weight: 1
         <div class = "valign-wrapper">
           <div class = "col s12 m3 l3 center">
             <div>
-              <a href='./about'>
-                <img src="./img/KRYPTOMONITOR_LOGO_RGB.svg" alt="" class="circle responsive-img hoverable">
-              </a>
+              <img src="{{ site.url }}/img/KRYPTOMONITOR_LOGO_RGB.svg" alt="" class="circle responsive-img hoverable">
             </div>
             <div style = 'padding: 5px 0px'></div>
           </div>

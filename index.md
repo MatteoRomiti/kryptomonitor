@@ -49,7 +49,7 @@ navigation_weight: 1
 </div>
 
 <script>
-  particlesJS.load('particles-js', './js/particles.json', function() {
+  particlesJS.load('particles-js', '{{ site.url }}/js/particles.json', function() {
      console.log('callback - particles.js config loaded');
   });
 
